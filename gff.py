@@ -20,7 +20,7 @@ def send_request_to_form(url, value):
 answerValues = {
     # "entry.279816145": "Có",
     # "entry.255472575": "Nữ",
-    # "entry.1025981134": "Trên 45",
+    # "entry.1025981134": "Từ 36 - 45",
     # "entry.64279046": "Quảng Nam",
     # "entry.1787404521": "1",
     # "entry.116574743": "Không",
@@ -30,14 +30,18 @@ answerValues = {
     # "entry.1316612624": "Thiet bi cam tay",
     # "entry.1968651515": "Chi phí quá cao",
     "entry.276741477": [
-        "Gửi thông báo đến điện thoại phụ huynh",
-        "Cảnh báo trẻ em khi ra khỏi khu vực an toàn",
+        # "Gửi thông báo đến điện thoại phụ huynh",
+        # "Cảnh báo trẻ em khi ra khỏi khu vực an toàn",
+        # "Theo dõi vị trí thời gian thực",
+        # "Chống nước, chống va đập",
+        # "Dễ dàng sử dụng và cài đặt",
+        # "Pin sử dụng lâu dài",
     ],
-    # "entry.577361753": "Dưới 500.000 VNĐ",
+    "entry.577361753": "1.000.000 VNĐ - 2.000.000 VNĐ",
     # "entry.476453814": "a",
 }
 
-requestParameters = ""
+requestParameters = "1.000.000 VNĐ - 2.000.000 VNĐ"
 
 # For request URL
 
@@ -56,6 +60,6 @@ requestParameters = ""
 #
 #     add_to_request_param(key, value)
 
-for i in range(1):
+for i in range(5):
     send_request_to_form(submitFormURL, answerValues)
 # print(send_request_to_form(viewURL + requestParameters))
